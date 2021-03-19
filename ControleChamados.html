@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">
+    <title>Controle Chamados</title>
+    
+</head>
+<body>
+
+    <form>
+        <table>
+            <caption>Controle de Chamados</caption>
+            <tr>
+                <td class="alinharRotulos">Chamado:</td>
+                <td><input id="txtchamado" type="text"></td>
+            </tr>
+           
+            <tr>
+                <td class="alinharRotulos">Descrição:</td>
+                <td><input id="txtDescricao" type="text"></td>
+            </tr> 
+
+            <tr>
+                <td class="alinharRotulos">Equipamento:</td>
+                <td><input id="txtEquipamentos" type="text"></td>
+            </tr>
+            
+                <td class="alinharRotulos">Data de abertura:</td>
+               <td><input id="DataAbertura" type="date"></td>
+           
+            <tr>  
+                    <tr>
+                        <!----botoes do controle do chamado-------->
+
+                            <td colspan="2" align="center"> 
+                                <input type="button" value="Cadastrar" class="alinhaBtns" onclick="Cadastrar('txtchamado','txtDescricao','txtEquipamentos','DataAbertura')">
+                                <input type="button" value="Mostrar Chamados" class="alinhaBtns" onclick="window.open('MostrarChamado.html','_self')">
+                                <input type="button" value="Voltar Cadastro" class="alinhaBtns" onclick="window.open('index.html','_self')">
+                                <input type="reset" value="Limpar" class="alinhaBtns">
+
+                            </td>
+                        </tr>   
+                
+
+</body>
+</html>

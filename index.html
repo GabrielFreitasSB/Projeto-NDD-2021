@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Estoque - Cadastro de Novos Equipamentos</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/funcoes.js"></script>
+</head>
+
+<body onload="carregATotalEsquipamentos('Equipamentos')">
+    <!--Imagem tela inicial-->
+    <div class="img">
+        <img src="img/imagemestoque.png">
+        <p>Itens no Estoque: <span id="Equipamentos">0</span></p>
+    </div>
+    
+    <!--Formulário: Nome, código e quantidade de produtos-->
+    <form>
+        <table>
+            <caption>Cadastro de Equipamentos</caption>
+            <tr>
+                <td class="alinharRotulos">Nome do produto:</td>
+                <td><input id="txtNomeProduto" type="text"></td>
+            </tr>
+            <!--Código do produto-->
+            <tr>
+                <tr>
+                    <td class="alinharRotulos">Preço :</td>
+                   <td><input id="txtPreco" type="number"></td>
+             
+                
+                   <tr>
+                    <td class="alinharRotulos"> Fabricante:</td>
+                   <td><input id="txtFabricante" type="text"></td>
+           
+                <tr>
+                
+               <tr>
+                <td class="alinharRotulos">Número de Série:</td>
+                <td><input id="txtNumeroSerie" type="number"></td>
+            </tr>
+
+                <td class="alinharRotulos">Data de Fabricação :</td>
+               <td><input id="txtDatafabricacao" type="date"></td>
+        
+            <tr>
+
+               <!--Botoes-->
+            <tr>
+               
+            <!--Add depois Controle de Equipamentos-->
+                <td colspan="2" align="center"> 
+                    <input type="button" value="Cadastrar" class="alinhaBtns" onclick="validarProduto('txtNomeProduto','txtPreco','txtNumeroSerie','txtFabricante','txtPreco','txtDatafabricacao',)">
+                    <input type="button" value="Ver Estoque" class="alinhaBtns" onclick="window.open('Equipamentos.html','_self')">
+                    <input type="button" value="Chamados" class="alinhaBtns" onclick="window.open('ControleChamados.html','_self')">
+                    <input type="reset" value="Limpar" class="alinhaBtns">
+            
+                
+                   
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
